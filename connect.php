@@ -10,7 +10,9 @@ if(isset(($_POST['pass']))){
 
 $sql="select * from tblaccount where _user='".$username."' and _pass='".$pass."'";
 
-$result = pg_query($dbconn, $sql);
+$result = pg_query($dbconn, $sql)
+		or
+        die("Không thể kết nối database");
 $row=pg_num_rows($result);
 if($row==1)
 {
