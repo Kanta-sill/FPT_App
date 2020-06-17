@@ -11,15 +11,24 @@ if(isset(($_POST['pass']))){
 $sql="select * from tblaccount where _user='".$username."' and _pass='".$pass."'";
 
 $result = pg_query($dbconn, $sql);
-$row=pg_num_rows($result);
-if($row==1)
-{
-	echo "Log in success";
+while ($row=pg_fetch_row($result)){
+	if($row[0]==$username $$ $row[1]==$pass){
+		echo "Login success";
+	}
+	else{
+		echo "Login fail";
+	}
 }
-else
-{
-	echo "Log in fail";
-}
+
+// $row=pg_num_rows($result);
+// if($row==1)
+// {
+// 	echo "Log in success";
+// }
+// else
+// {
+// 	echo "Log in fail";
+// }
 
 
 ?>
