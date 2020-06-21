@@ -1,0 +1,119 @@
+.login{
+    width: 360px;
+    padding: 8% 0 0;
+    margin: auto;
+
+}
+.form{
+    height: 300px;
+    position: relative;
+    background: #33FF99;
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+
+}
+.form input{
+    font-family: sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+.form button{
+    font-family: sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #4CAF50;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+
+}
+.form button:hover, .form button:active, .form button:focus{
+    background: #43A047;
+}
+
+#menu {
+     margin: 0;
+     width: 1320px;
+     background-color: #666666;
+     font-size: 16px;
+     font-family: Tahoma, Geneva, sans-serif;
+     font-weight: bold;
+     text-align: left;
+     padding: 8px;
+     border-radius: 8px;
+     -webkit-border-radius: 8px;
+     -moz-border-radius: 8px;
+     -o-border-radius: 8px;
+     
+}
+
+#menu ul {
+     margin: 0;
+     width: 80%;
+     padding: 8px 0;
+     list-style: none;
+     height: auto;
+}
+
+#menu li {
+     display: inline;
+     padding: 8px;
+}
+
+#menu a {
+     color: #FFF;
+     padding: 10px;
+     text-decoration: none;
+}
+
+#menu a:hover {
+     background-color: #1B191B;
+     color: #FFF;
+     border-radius: 20px;
+     -webkit-border-radius: 20px;
+     -moz-border-radius: 20px;
+     -o-border-radius: 20px;
+}
+
+#menu li .active {
+     background-color: #1B191B;
+     color: #FFF;
+     border-radius: 20px;
+     -webkit-border-radius: 20px;
+     -moz-border-radius: 20px;
+     -o-border-radius: 20px;
+}
+
+#top{
+    
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+    width: 1300px;
+
+}
+#cart{
+
+    margin: 0;
+    width: 100px;
+    display: flex;
+    justify-content: flex-end;
+}
+#logout{
+    
+    margin: 0;
+    width: 150px;
+    display: flex;
+    justify-content: flex-end;
+
+}
